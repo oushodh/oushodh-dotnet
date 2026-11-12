@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Oushodh</RootNamespace>
+    <PackageId>Oushodh</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Oushodh</Authors>
+    <Copyright>Copyright (c) 2026 Oushodh</Copyright>
+    <Description>The .NET SDK for the Oushodh API: medicine data for Bangladesh, checked against the DGDA register.</Description>
+    <PackageTags>oushodh;medicine;bangladesh;dgda;api;sdk</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://oushodh.dev/docs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/oushodh/oushodh-dotnet</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <IsAotCompatible>true</IsAotCompatible>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+    <InternalsVisibleTo Include="Oushodh.Tests" />
+  </ItemGroup>
+</Project>
