@@ -19,14 +19,14 @@ The full API reference is at [oushodh.dev/docs](https://oushodh.dev/docs).
 Install from GitHub for now. Either add the project to your solution:
 
 ```sh
-git clone https://github.com/oushodh/oushodh-dotnet.git
+git clone --branch v0.1.0 https://github.com/oushodh/oushodh-dotnet.git
 dotnet add reference oushodh-dotnet/src/Oushodh/Oushodh.csproj
 ```
 
 Or build a package and install it from a local folder:
 
 ```sh
-git clone https://github.com/oushodh/oushodh-dotnet.git
+git clone --branch v0.1.0 https://github.com/oushodh/oushodh-dotnet.git
 dotnet pack oushodh-dotnet/src/Oushodh -c Release -o ./nupkgs
 dotnet add package Oushodh --version 0.1.0 --source ./nupkgs
 ```
