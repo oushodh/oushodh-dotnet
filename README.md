@@ -220,7 +220,8 @@ catch (RateLimitException error) when (error.Code == "quota_exceeded")
 
 Some plans read only the first medicines, in the order of their permanent number. Lists and search leave out the rest.
 A lookup by ID of such a medicine throws `PermissionDeniedException` with `Code` `plan_limit`. `Meta.Medicines` says
-how many medicines your key reads.
+how many medicines your key reads. An account with no active plan gets `PermissionDeniedException` with `Code`
+`plan_expired` on every call.
 
 ## Retries and rate limits
 
